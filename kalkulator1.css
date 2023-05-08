@@ -1,0 +1,17 @@
+
+body {
+	background-color: blue;
+	background-size: contain;
+}
+
+.badanya {
+    padding: 10%;
+	background-color: white;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 450px;
+	border-radius: 15px;
+	overflow: hidden;
+}

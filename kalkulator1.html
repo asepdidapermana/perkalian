@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kalkulator asep</title>
+    <link rel="stylesheet" href="kalkulator1.css">
+</head>
+<body>
+    <div class="badanya">
+    <div>
+        <input type="number" id="angka1">
+        <input type="number" id="angka2">
+        <b>hasil</b> <span id="hasil"></span>
+        <br><br>
+        <button onclick="hitung('+')">+</button>
+        <button onclick="hitung('-')">-</button>
+        <button onclick="hitung('*')">*</button>
+        <button onclick="hitung('/')">/</button>
+    </div>
+<script>
+    var angka = document.getElementById('angka1');
+    var angka = document.getElementById('angka2');
+    var angka = document.getElementById('hasil');
+    function hitung (value) {
+var proses;
+switch(value) {
+    case "+":
+    proses = Number(angka1.value) + Number(angka2.value);
+    hasil.innerHTML = proses;
+    break;
+    case "-":
+    proses = angka1.value - angka2.value;
+    hasil.innerHTML = proses;
+    break;
+    case "*":
+    proses = angka1.value * angka2.value;
+    hasil.innerHTML = proses;
+    break;
+    case "/":
+    proses = angka1.value / angka2.value;
+    hasil.innerHTML = proses;
+    break;
+}
+console.log(hasil)
+    }
+</script>
+</body>
+</html>
